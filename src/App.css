@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f8f2;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+/* ---------- Landing page ---------- */
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  transition: opacity 0.5s ease;
+}
+
+.landing-page.fade-out {
+  display: none;
+}
+
+/* Background image for the Paradise Nursery landing page */
+.background-image {
+  position: fixed;
+  inset: 0;
+  background-image: url('https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.jpg');
+  background-color: #1f4d2b; /* shows if the image can't load */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.background-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* darkens the image so text is readable */
+}
+
+.content {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 24px;
+}
+
+.landing_content {
+  color: #fff;
+  text-align: center;
+  max-width: 460px;
+}
+
+.landing_content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 14px;
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  background: #4caf50;
+  margin: 0 auto 14px;
+}
+
+.landing_content p {
+  font-size: 1.3rem;
+  margin-bottom: 26px;
+}
+
+.get-started-button {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 14px 34px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.get-started-button:hover {
+  background: #388e3c;
+}
+
+/* ---------- Product list wrapper ---------- */
+.product-list-container {
+  display: none;
+}
+
+.product-list-container.visible {
+  display: block;
+}

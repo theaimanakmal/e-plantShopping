@@ -1,0 +1,23 @@
+.about-us-container {
+  max-width: 560px;
+  color: #fff;
+  text-align: left;
+}
+
+.about-us-description {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.about-us-content {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.about-us-company-details {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #c8f7c5;
+  margin-top: 10px;
+}
